@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="background_menu">
+      <div id="menu">
+        <div id="img_container">
+          <img src="./img/art.gif" alt="background menu" />
+        </div>
+
+        <div id="content" style="background-color:rgb(244, 140, 140)">
+          <h1>3D Art Gallery</h1>
+          <div>
+            <p><h2>This is an interactive 3D gallery</h2></p>
+            <p>Made by Team Alpha </p>
+            <p><b>(Anuj Shrestha, Arisha Prasain and Ayush Adhikari)</b></p>
+            <p>using THREE.js</p>
+            <p>Special Thanks to Anish Bishakarma.</p>
+          </div>
+          <br/>
+
+          <div>
+            <p><b>Instructions</b></p>
+            <p>Use Arrow keys to navigate</p>
+            <p>U-up, H-down</p>
+            <p>R-clockwise-rotate E-anticlockwise-rotate</p>
+            <p>Look around with mouse</p>
+            <p>Click the 'Start Audio' and 'Play Video' before entering the gallery.</p>
+            <i>If the audio does not play on 1st click, please re-click after 4-5 seconds.</i>
+          </div>
+
+          <div id="play_button">
+            <p>Enter the Gallery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="painting-info"></div>
+
+    <!-- <button id="play_video">Play Video</button> -->
+
+
+    <div id="audio_controls">
+      <button id="start_audio">Start Audio</button>
+      <button id="stop_audio">Stop Audio</button>
+      <button id="play_video">Play Video</button>
+    </div>
+
+    <video id="video" style="display:none;" muted loop>
+      <source src="./artworks/abocean.mkv" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video id="video1" style="display:none;" muted loop>
+      <source src="./artworks/video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video id="video2" style="display:none;" muted loop>
+      <source src="./artworks/video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+
+    <canvas class="threejs"></canvas>
+    <script type="module" src="js/main.js"></script>
+
+</html>

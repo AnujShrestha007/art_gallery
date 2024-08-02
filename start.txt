@@ -1,0 +1,17 @@
+step0:
+stay in this root directory and perform the following
+
+step 1.
+install node js
+
+step2
+install necessary dependencies by running 'node install' command from the terminal
+
+step3:
+command 'npx vite' or 'npm run dev'
+
+step4:
+control + click given localhost link
+
+step5:
+enjoy
